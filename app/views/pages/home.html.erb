@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="body">
+  <%= render 'shared/navbar' %>
+  <%= render 'shared/bannerhome' %>
+  <%= render 'shared/signbuttons' %>
+  <%= render 'shared/slides' %>
+<!--   <div id="map"
+     style="width: 100%;
+     height: 600px;"
+     data-markers="<%= @markers.to_json %>"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div> -->
+
+     <div class="container">
+       <div class="headline">
+         <h3>How does it work?</h3>
+       </div>
+       <div class="cont-body"></div>
+     </div>
+</div>

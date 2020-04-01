@@ -1,0 +1,17 @@
+._sign-up, ._sign-in {
+  color: white;
+  background-color: #789EBF;
+  border: none;
+  border-radius: 6px;
+  width: 180px;
+  height: 50px;
+}
+
+._sign-up:hover, ._sign-in:hover {
+  background-color: #4B7BA6;
+}
+.signin-buttons {
+  background-size: cover;
+  background-position: center;
+  margin-top: 100px;
+}

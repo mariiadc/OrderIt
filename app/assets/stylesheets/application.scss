@@ -7,7 +7,31 @@
 @import "bootstrap/scss/bootstrap";
 @import "font-awesome-sprockets";
 @import "font-awesome";
+@import 'mapbox-gl/dist/mapbox-gl';
+@import '@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder';
+
 
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+
+// // Small devices (landscape phones, 576px and up)
+// @media (min-width: 576px) {
+//  }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) {
+// }
+
+// // Extra large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//  }
+@media screen and (min-width: 768px) {
+  .showHide  { display: block; }
+  .signin-buttons { display: none; }
+}
