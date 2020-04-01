@@ -7,4 +7,6 @@ class Eatery < ApplicationRecord
   has_many :categories
   has_many :events
   has_many :tables
+  geocoded_by :address
+  after_validation :geocode, if: :will_save_change_to_address?
 end
