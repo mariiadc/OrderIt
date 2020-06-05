@@ -1,1 +1,90 @@
 // Specific CSS for your home-page
+// body {
+//    min-height:200vh;
+//    margin:0;
+//    font-family: 'Quicksand', sans-serif;
+//    overflow-x:hidden;
+//    a {
+//       color:inherit;
+//       text-decoration:none;
+//    }
+
+
+   .header {
+      z-index:1000;
+      position: fixed;
+      top:0px;
+      left:0px;
+      right:0px;
+      padding:10px 20px;
+      background: linear-gradient(100deg, rgba(36,164,234, 0), rgba(55,157,235,0) 25%, rgba(183,107,240,0));
+      transition:background .25s ease;
+      .about, .right-corner {
+         display:inline-block;
+         color:white;
+         font-size:24px;
+         line-height:42px;
+         font-smoothing: antialiased;
+      }
+      .about h4 {
+         font-weight:bold;
+      }
+      .right-corner {
+         float:right;
+      }
+      &.bg {
+         background: linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0);
+      }
+   }
+
+
+
+
+
+.homepage {
+  height: 100vh;
+}
+   .hero {
+
+      position: relative;
+      // height:50vh;
+      // min-height:1000px;
+      background: #ffce54;
+      background: linear-gradient(100deg, #24A4EA, #379DEB 25%, #B76BF0);
+      .bbw {
+         position: absolute;
+         top:100%;
+         left:-25vw;
+         right:0px;
+         background:url(https://i.koya.io/whitewave2.svg);
+         background-position:center;
+      }
+      .wave1 {
+         height:200px;
+         transform:translateY(-40px);
+      }
+      .wave2 {
+         height:240px;
+         transform:translateY(-80px);
+         background-size:960px 240px;
+         opacity:0.5;
+         left:-80vw;
+         right:-5vw;
+      }
+      .wave3 {
+         height:220px;
+         transform:translateY(-120px);
+         background-size:880px 220px;
+         opacity:0.33;
+         left:0vw;
+         right:-20vw;
+      }
+      .wave4 {
+         height:280px;
+         transform:translateY(-160px);
+         background-size:1120px 280px;
+         opacity:0.1;
+         left:0vw;
+         right:-40vw;
+      }
+   }
