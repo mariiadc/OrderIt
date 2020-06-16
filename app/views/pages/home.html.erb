@@ -24,8 +24,8 @@
 </div>
 
 <div class="homepage">
-  <div class="hero" id="particles-js">
-    <div class="svg">
+  <div class="background" id="particles-js">
+    <div class="svg"> <!-- White wave -->
       <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 960 560" preserveAspectRatio="xMidYMid slice">
         <path class="fade-in-fwd" stroke="#fff" fill="#fff" d="M-6.1,536.9c48-30.2,86.9-85.8,103.6-114.5c18.2-31.4,103.3-166.7,252.9-91.8
   c131.7,65.9,284.2,149.4,476.4,35.5c21-12.4,75.9-57.8,139.2-55V-6.4L830.7-6.3C808.8,26.4,807.7,249,545,165.4S165,199,106.6,263.4
@@ -34,12 +34,54 @@
         <!-- <path fill="#3D4773" d="M-5.8,569.6l-0.2-33.6c48-30.2,86.9-85.8,103.6-114.5c18.2-31.4,103.3-166.7,252.9-91.8
   c131.7,65.9,284.2,149.4,476.4,35.5c21-12.4,76-57.8,139.2-55v259.5"/> -->
       </svg>
-      <%=  render 'shared/phone'%>
-
+      <div class="content">
+        <%= render 'shared/phone'%>
+        <%= render 'shared/sellpoint' %>
+      </div>
     </div>
     <div class="bbw wave1"></div>
     <div class="bbw wave2"></div>
     <div class="bbw wave3"></div>
     <div class="bbw wave4"></div>
+<!--     <div class="button-down"></div>
+ -->  </div>
+  <div class="middlepage" id="section2">
+    <div class="eel">
+    <div class="elements">
+    <div class="elem">
+      <%= link_to "#", class: "menuicon iconmp" do %>
+        <%= image_tag "menu.svg" %>
+      <% end %>
+      <h4 class=elem1>Menu</h4>
+      <p class="elem2">Access eatery menu directly from your phone!</p>
+    </div>
+    <div class="elem">
+      <%= link_to "#", class: "chaticon iconmp" do %>
+        <%= image_tag "chat.svg" %>
+      <% end %>
+      <h4 class=elem1>Chat</h4>
+      <p class="elem2">Speak to your waiter without waiting!</p>
+    </div>
+    <div class="elem">
+      <%= link_to "#", class: "reviewicon iconmp" do %>
+        <%= image_tag "review.svg" %>
+      <% end %>
+      <h4 class=elem1>Review</h4>
+      <p class="elem2">Leave review on the go!</p>
+    </div>
+    <div class="elem">
+      <%= link_to "#", class: "billicon iconmp" do %>
+        <%= image_tag "bill.svg" %>
+     <% end %>
+     <h4 class=elem1>Bill</h4>
+     <p class="elem2">Pay as you order!</p>
+    </div>
+    </div>
+    </div>
+    <%= render 'shared/footer' %>
+   <!--  <div class="sellpointmp">
+      <h2 id="headlinemp">Order food, drinks directly from your phone!</h2>
+      <p id="textmp">Tired waiting for waiter to notice you and bring the menu? Or perhaps simply take your order? Say "no more" - make an order directly from your phone, pay as you order and simply enjoy the time! From now on the order is a few steps closer to you!</p>
+    </div> -->
   </div>
 </div>

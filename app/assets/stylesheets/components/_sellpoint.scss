@@ -1,0 +1,199 @@
+.content-top {
+ position: relative;
+ -webkit-transform: translate(30%, -50%) rotate(0deg) skewX(0deg);
+          transform: translate(30%, -50%) rotate(0deg) skewX(0deg);
+}
+
+// .circle {
+//    background-color: rgba(107,197,230,1);
+//   border-radius: 50%;
+//   box-shadow: 0 0 0 0 rgba(0,0,0,0.05);
+//   position: relative;
+//   height: 3em;
+//   width: 3em;
+//   top: 0;
+//   z-index: 2;
+// }
+
+.slide-in-right-eat{-webkit-animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94)  1060ms both;animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) 1060ms both}
+@-webkit-keyframes slide-in-right-eat{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+.slide-in-right-drink{-webkit-animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94)  2100ms both;animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) 2100ms both}
+@-webkit-keyframes slide-in-right-drink{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+
+.slide-in-right-wait{-webkit-animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94)  2500ms both;animation:slide-in-right .5s cubic-bezier(.25,.46,.45,.94) 2500ms both}
+@-webkit-keyframes slide-in-right-wait{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes slide-in-right{0%{-webkit-transform:translateX(1000px);transform:translateX(1000px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+.word {
+  color: #F2EFF0;
+  font-weight: bold;
+  font-size: 120px;
+  text-decoration: none;
+  text-align: left;
+  // align-items: right;
+  text-shadow: 0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc, 0 4px 0 #cccccc, 0 5px 0 #cccccc, 0 6px 0 #cccccc, 0 7px 0 #cccccc, 0 8px 0 #cccccc, 0 9px 0 #cccccc, 0 50px 30px rgba(0, 0, 0, 0.3);
+
+}
+#drink {
+  padding-left: 100px;
+}
+li {
+   list-style-type: none;
+}
+
+.ball {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column;
+}
+.ball {
+  &:hover {
+    .circle {
+      &::after {
+        animation: boing .8s ease infinite;
+      }
+    }
+    .shadow {
+      animation: shadow .8s ease infinite;
+    }
+}
+
+  .circle {
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.05);
+    position: relative;
+    height: 2em;
+    width: 2em;
+    // top: 0;
+    z-index: 2;
+
+    &::after {
+      background-color: rgba(107,197,230,1);
+      border-radius: 50%;
+      content: "";
+      position: absolute;
+      height: 3em;
+      width: 3em;
+      left: 0;
+
+      // ANIMATION
+      animation: pulse 2s linear infinite;
+    }
+
+  }
+
+  .shadow {
+    position: relative;
+    border-radius: 50%;
+    bottom: -3px;
+    background-color: rgba(0,0,0,.1);
+    width: 2.8em;
+    height: .6em;
+    margin-top: -6px;
+  }
+
+}
+
+@keyframes pulse {
+
+  0% {
+    box-shadow: 0 0 0 0 rgba(107,197,230,0.2);
+  }
+
+  50% {
+    box-shadow: 0 0 0 15px rgba(107,197,230,0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 25px rgba(107,197,230,0.0);
+  }
+
+}
+
+@keyframes boing {
+
+  0% {
+    top: 2px;
+    height: 2.6em;
+    width: 3.5em;
+  }
+
+  70% {
+    top: -65px;
+    height: 3.2em;
+    width: 2.4em;
+    left: .3em;
+  }
+
+  80% {
+    height: 3em;
+    width: 2.6em;
+    left: .1em;
+  }
+
+  92% {
+    height: 2.8em;
+  }
+
+  100% {
+    top: 8px;
+    height: 2.4em;
+    width: 3.6em;
+  }
+
+}
+
+@keyframes shadow {
+
+  0%, 100% {
+    transform: scale(1);
+    background-color: rgba(0,0,0,.1);
+  }
+
+  70% {
+    transform: scale(.7);
+    background-color: rgba(0,0,0,.065);
+  }
+
+  80% {
+    transform: scale(.75);
+    background-color: rgba(0,0,0,.08);
+  }
+
+  92% {
+    transform: scale(.85);
+    background-color: rgba(0,0,0,.1);
+  }
+
+}
+@keyframes strike{
+  0% {
+    width : 0%;
+
+   }
+  100% { width: 100%; }
+}
+.strike {
+  position: relative;
+
+}
+.strike::after {
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 10px;
+  background: #DE5974;
+  border-radius: 4px;
+  animation: strike 1.5s linear 1;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+
+
+}
+

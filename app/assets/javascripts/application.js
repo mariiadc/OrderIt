@@ -2,4 +2,5 @@
 //= require_tree .
 //= require jquery
 //= require menu
-//= require middlehomepage
+//= require about
+//= require home

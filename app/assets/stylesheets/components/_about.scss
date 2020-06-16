@@ -15,14 +15,23 @@ $waveDur: 2500ms;
 //   top: 50%;
 //   transform: translate(-50%, -50%);
 // }
+.is-hidden {
+  opacity: 0;
+  transition: transform 0.3s, opacity 0.2s;
+}
+.is-visible {
+  opacity: 1;
+  transition: transform 0.8s, opacity 1.2s;
+}
 
 .text {
+
   color: #fff;
   font-size: 3.5rem;
   font-weight: 900;
   display: inline-block;
   position: absolute;
-  top:10%;
+  top: 35%;
 
   animation: text $textDur ease-in ;
   transform: translatez(0);
@@ -164,3 +173,5 @@ $waveDur: 2500ms;
     transform: rotateY(90deg) scale(0);
   }
 }
+
+
