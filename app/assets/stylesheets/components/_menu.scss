@@ -28,7 +28,7 @@
 
 
 .menu {
-  margin-top: 5%;
+  // margin-top: 5%;
   // margin-left: 5%;
 }
 
@@ -76,10 +76,10 @@
   100% {transform: scale(10.5);}
 }
 
-.back {
-  -webkit-animation: deactivate 0.3s linear forwards;
-  animation: deactivate 0.3s linear forwards;
-}
+// #back {
+//   -webkit-animation: deactivate 0.3s linear forwards;
+//   animation: deactivate 0.3s linear forwards;
+// }
 
 @-webkit-keyframes deactivate {
   0% {transform: scale(10.5);}
@@ -100,11 +100,11 @@
 
 #menu {
   position: relative;
-  margin-top: -20%;
+  margin-top: -40%;
   display: none;
 }
 
-li {
+.menu-right {
   list-style: none;
   margin-top: 18px;
   color: #fff;

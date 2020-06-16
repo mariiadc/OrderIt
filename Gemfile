@@ -17,6 +17,8 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 gem 'pundit'
+gem "websocket-extensions", ">= 0.1.5"
+
 
 group :development do
   gem 'web-console', '>= 3.3.0'

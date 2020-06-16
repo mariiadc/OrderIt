@@ -1,11 +1,50 @@
 <div id="iphone-x" class="fade-in-fwd">
             <div class="device device-iphone-x">
               <div class="device-frame">
-                <div class="device-content">
+                <div class="device-content shine-me">
+                  <%= link_to "#", class: "upperhalf" do %>
+                    <%= image_tag "restarant2.svg"  %>
+                  <% end %>
+                  <div class="extraspace"></div>
+                  <div class="tabtable" >
+                    <p class="tabnametable">Book a table</p>
+                  </div>
+                  <div class="taborder">
+                    <div class="headline">
+                      <div class="headtbnorder">
+                        <p class="tabnameorder">Make an order</p>
+                        <p id="address">Address: You are here </p>
+                      </div>
+                        <%= link_to "#", class: "orderheadimg" do %>
+                          <%= image_tag "icon.svg" %>
+                        <% end %>
+                    </div>
+                    <div class="info-menu">
+                      <div class="image">
+                      <%= link_to "#", class: "bottomhalf " do %>
+                        <%= image_tag "menu.svg" %>
+                      <% end %>
+                      </div>
+                      <%= link_to "#", class: "bottomhalf3" do %>
+                        <%= image_tag "review.svg" %>
+                      <% end %>
 
+
+                    </div>
+                    <div class="info-menu">
+                      <div class="image">
+                        <%= link_to "#", class: "bottomhalf2" do %>
+                        <%= image_tag "chat.svg" %>
+                      <% end %>
+                      </div>
+                      <%= link_to "#", class: "bottomhalf3" do %>
+                        <%= image_tag "bill.svg" %>
+                      <% end %>
+                    </div>
+                  </div>
                 </div>
-                <div class="device-stripe"></div>
-                <!-- <div class="device-header"></div>
+               <!--  <div class="device-stripe"></div> -->
+               <!--  <div class="device-header"></div>
                 <div class="device-sensors"></div> -->
                 <div class="device-btns"></div>
                 <div class="device-power"></div>
